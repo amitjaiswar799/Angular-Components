@@ -1,0 +1,7 @@
+<div>
+    <button (click)="searchPhoto()" class="ui inverted orange button">Search Photo</button>
+</div><br>
+
+<div class="img1" *ngIf="photos">
+    <img [src]="photos" alt="Unsplash Photo"  style="width: 350px; height: 350px;" />
+</div>

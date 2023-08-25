@@ -1,0 +1,17 @@
+<div class="ui accordion" >
+
+  <ng-container *ngFor="let item of Acco ; let i = index ;" >
+
+    <div class="title" (click)="toggle()" (click)="onchange(i)" [ngClass]="{active : i === Count}">
+      <i class="dropdown icon"></i>
+      {{item.Ques}}
+    </div>
+    <div class="content" *ngIf="isExpanded" [ngClass]="{active: i === Count}">
+      <p class="transition">
+        {{item.Ans}}
+      </p>
+    </div>
+
+  </ng-container>
+
+  </div>

@@ -1,0 +1,6 @@
+<app-divider>Modal</app-divider>
+<button class="positive ui button" (click)="openModal();" >Modal</button>
+<app-modal *ngIf="isOpenModal" (isOpenModal)="openModal()" [modd]="data"></app-modal><br><br>
+
+<app-divider>Accoridian</app-divider>
+<app-accordian [Acco]="vals"></app-accordian>

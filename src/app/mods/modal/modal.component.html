@@ -1,0 +1,18 @@
+<div (click)="onCloseClick()" class="ui active dimmer">
+    <ng-container *ngFor="let item of modd" >
+      <div (click)="$event.stopPropagation()" class="ui active visible modal">
+          <i (click)="onCloseClick()" class="close icon"></i>
+          <div class="header">
+           {{item.modTitle}}
+          </div>
+      
+          <div class="content">
+              {{item.modContent}}
+          </div>
+      
+          <div class="actions">
+            <button (click)="onCloseClick()">ok</button>
+          </div>
+        </div>
+      </ng-container>
+  </div>

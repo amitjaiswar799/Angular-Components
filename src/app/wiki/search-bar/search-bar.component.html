@@ -1,0 +1,9 @@
+<div>
+    <form (submit)="onSubmit($event)">
+      <div class="ui icon input">
+        <input class="input" type="text" placeholder="Search"
+         #term (input)="onSearchTextChange(term.value)">
+         <i class="search icon"></i>
+      </div>
+     </form>
+</div>

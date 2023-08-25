@@ -1,0 +1,14 @@
+<table class="ui celled table">
+    <thead>
+      <tr>
+        <th *ngFor="let item of headers">{{item.lable}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td *ngFor="let header of headers">
+          {{item[header.key]}}
+      </td>
+      </tr>
+    </tbody>
+  </table>

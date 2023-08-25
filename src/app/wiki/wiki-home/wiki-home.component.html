@@ -1,0 +1,4 @@
+<app-divider>WikiSearch</app-divider>
+<app-search-bar (searchTextChange)="swyw($event)" ></app-search-bar>
+<br><br>
+<app-page-list *ngIf="pages.length" [result]='pages'></app-page-list>
