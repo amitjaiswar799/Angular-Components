@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/comps1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -32,6 +32,7 @@
           },
           "configurations": {
             "production": {
+              "outputPath": "docs",
               "budgets": [
                 {
                   "type": "initial",
@@ -47,6 +48,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "outputPath": "dist/Comps1",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
