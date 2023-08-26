@@ -48,7 +48,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "outputPath": "dist/Comps1",
+              "outputPath": "docs",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
